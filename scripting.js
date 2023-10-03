@@ -1,4 +1,8 @@
 function rollDice() {
+    document.body.removeChild(die1Text); //removes die1text from document
+    document.body.removeChild(die2Text); //removes die2text from document
+    document.body.removeChild(totalText); //removes totaltext from document
+    
     const die1 = Math.floor(Math.random() * 6) + 1; //1-6
     const die2 = Math.floor(Math.random() * 6) + 1; //1-6
     const total = die1 + die2; //2-12
@@ -9,6 +13,7 @@ function rollDice() {
     die2Text.textContent = "Die 2: " + die2; //Text for Die 2 with value
     const totalText = document.createElement("p");
     totalText.textContent = "Total: " + total; //Text for Total with value
+    
     document.body.appendChild(die1Text); //adds die1text to document
     document.body.appendChild(die2Text); //adds die2text to document
     document.body.appendChild(totalText); //adds totaltext to document
