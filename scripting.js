@@ -1,8 +1,4 @@
 function rollDice() {
-    document.body.removeChild(die1Text); //removes die1text from document
-    document.body.removeChild(die2Text); //removes die2text from document
-    document.body.removeChild(totalText); //removes totaltext from document
-    
     const die1 = Math.floor(Math.random() * 6) + 1; //1-6
     const die2 = Math.floor(Math.random() * 6) + 1; //1-6
     const total = die1 + die2; //2-12
